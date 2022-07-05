@@ -1,7 +1,8 @@
 {
   "name": "qwik-router",
   "version": "1.0.0",
-  "description": "Simple page routing primitives for a Qwik web-app.",
+  "description": "Simple page routing components and hooks for Qwik.",
+  "keywords": ["qwik", "router", "route", "routing", "history", "link"],
   "private": false,
   "repository": "github:peterboyer/qwik-router",
   "author": "Peter Boyer <https://github.com/peterboyer>",
