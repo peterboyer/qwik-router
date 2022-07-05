@@ -38,11 +38,12 @@ export const Link = component$(
       <Host
         {...// prettier-ignore
         {} /*
-          // @ts-ignore */}
+          // @ts-expect-error qwik: Host doesn't support generic type parameter for HTMLAnchorElement instead. */}
         href={props.to}
         preventdefault:click
         onClick$={(event) => {
           let href: string | undefined = undefined;
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const path = (event as any).path as (
             | HTMLElement
             | HTMLAnchorElement
@@ -55,7 +56,7 @@ export const Link = component$(
           }
           if (!href) {
             throw new TypeError(
-              'NO_HREF: Unable to find parent <a> with "href" property.'
+              'NO_HREF: Unable to find ancestor <a> with "href" property.'
             );
           }
           const url = new URL(href);
