@@ -1,0 +1,19 @@
+{
+  "name": "qwik-router",
+  "version": "1.0.0",
+  "description": "Simple SPA routing primitives for a Qwik webapp.",
+  "main": "src/index.tsx",
+  "repository": "git@github.com:peterboyer/qwik-router.git",
+  "author": "Peter Boyer <@peterboyer>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@builder.io/qwik": "^0.0.34"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "^0.0.34",
+    "@tsconfig/node18-strictest": "^1.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
