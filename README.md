@@ -12,8 +12,8 @@ $ yarn add qwik-router  # with yarn
 # Overview
 
 - `<Router> ... </Router>`, wrap your app to create a router context.
-- `useRouterPath()`, hook to access the current path to conditionally show components.
-- `<Link href="/route">Route</Link>`, to create a router aware `<a>` tag to navigate around.
+- `const path = useRouterPath()`, hook to access the current path to conditionally show components.
+- `<Link href="/my-page">My Page</Link>`, to create a router aware `<a>` tag to navigate around.
 
 # Usage
 
