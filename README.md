@@ -11,9 +11,13 @@ $ yarn add qwik-router  # with yarn
 
 # Overview
 
+```tsx
+import { Router, Link, useRouterPath } from "qwik-router";
+```
+
 - `<Router> ... </Router>`, wrap your app to create a router context.
-- `const path = useRouterPath()`, hook to access the current path to conditionally show components.
 - `<Link href="/my-page">My Page</Link>`, to create a router aware `<a>` tag to navigate around.
+- `const path = useRouterPath()`, hook to access the current path to conditionally show components.
 
 # Usage
 
@@ -52,9 +56,9 @@ export const App = component$(() => {
     return <div>About Route</div>;
   } else if (path === "/posts") {
     return <div>Posts Route</div>;
-  } else {
-    return <div>404: Not Found</div>;
   }
+
+  return <div>404: Not Found</div>;
 });
 ```
 
